@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Gotham-Rounded;
+    src: url("../fonts/GothamRounded-Medium.otf") format("opentype"),
+         url("../fonts/GothamRoundedMedium_21022.ttf")  format("truetype");
+}
+@font-face {
+    font-family: Gotham-Rounded;
+    font-weight: bold;
+    src: url("../fonts/GothamRounded-Bold.otf") format("opentype"),
+         url("../fonts/GothamRoundedBold_21016.ttf")  format("truetype");
+}
+
+* {
+    margin: 0px;
+    text-align: center;
+    font-family: "Gotham-Rounded";
+}
+
+body{
+    margin-top: 40px;
+}
+
+h1,h2 {
+    color: red;
+}
+.cta-button{
+    color: white;
+    background-color: red;
+    padding: 20px 60px;
+    border-radius: 40px;
+    border-color: red;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.wheel-base {
+    background-image: url("../image/wheel-base.png ");
+    background-position:center;background-repeat: no-repeat; padding: 12px 0 100px 0;
+    background-size: 382px;
+}
+
+.wheel-pin {
+    background-image: url(../image/wheel-pin.png);
+    height: 46px;
+    width: 75px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    z-index: 500;
+    background-size: 74px;
+    background-repeat: no-repeat;
+}
+
+#ruleta {
+    /* margin-top: 40px; */
+    width: 300px;
+}
+
+img {
+    z-index: 100;
+    transition: all 5s;
+}
+
+#premio {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.modal-congrats{
+    top: 155px;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    /* box-shadow: 0 0 0 50vmax rgba(0, 0, 0, .5); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 900;
+}
+.modal-content {
+    margin: 40px auto;
+}
+.modal-content h1{
+    font-size: 54px;
+    padding: 40px 0 ;
+}
+.modal-content p{
+    font-size: 20px;
+}
+#prize{
+    line-height: 36px;
+    font-weight: bold;
+}  
+
+
+@media only screen and (max-width: 800px) {
+    .modal-congrats{
+        width: 95%;
+    }
+    .modal-content h1{
+        font-size: 42px;
+    }
+}

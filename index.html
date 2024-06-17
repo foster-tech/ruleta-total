@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de la Ruleta</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/confetti.css">
+  <link rel="icon" href="data:,">
+</head>
+<div class="js-container container" id="confetti" style="top:0px !important;display: none;">
+  <div class="modal-congrats">
+    <div class="modal-content">
+      <h2>XXXxxxXXxxx</h2>
+      <h1>¡FELICIDADES!</h1>
+      <p>Has ganado <br><span id="prize"></span>  </p>
+    </div>
+      
+  </div>
+</div>
+<body>
+  <h1>XXXxxxXXxxx</h1>
+  <button class="cta-button" onclick=girar()>¡Gira la rueda!</button>
+  <div id="premio">
+    <p class="elije">Kit de herramientas</p>
+  </div>
+  
+  <div class="wheel-base">
+    <div class="wheel-pin"></div>
+    <div>
+      <img src="image/wheel.png" id="ruleta">
+    </div>
+  </div>
+  </div>
+  
+ 
+
+  <div>
+    <div id="sonido" style="display: none;">
+      <iframe src="" id="audio"></iframe>
+      <iframe src="" id="audio-cheer"></iframe>
+    </div>
+  </div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="js/script.js"></script>
+  <script src="js/confetti.js"></script>
+</body>
+
+</html>
